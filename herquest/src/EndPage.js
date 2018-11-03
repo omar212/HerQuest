@@ -62,24 +62,6 @@ const styles = () => ({
   logo: {
     width: '30%',
     height: '30%'
-  },
-  card: {
-    border: '3px solid black'
-  },
-  styleButton: {
-    width: '10%',
-    height: '10%',
-    color: 'white',
-    textTransform: 'none',
-    fontSize: '150%',
-    fontStyle: ''
-  },
-  styleSelect: {
-    backgroundColor: '#8cd4e4'
-  },
-  questionColor: {
-    color: '#7f47dd',
-    fontSize: '300%'
   }
 });
 

@@ -12,6 +12,7 @@ import logo from './hq_logo-01.png';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
+import Main from "./Main.js";
 // import MenuIcon from '@material-ui/icons/Menu';
 
 import './App.css';
@@ -44,7 +45,6 @@ class App extends Component {
   }
 
   onSubmit() {
-    <Route path="./EndQuiz" component={Result} />
   }
 
   render() {
@@ -53,21 +53,17 @@ class App extends Component {
     return (
       <div className="App">
 
-
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-            {/* <MenuIcon /> */}
-          </IconButton>
-          <Typography variant="h6" color="inherit" className={classes.grow}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Learn More About Us</Button>
-          <Button color="inherit">Rewards</Button>
-        </Toolbar>
-      </AppBar>
-<img src={logo} alt="Header" className={classes.logo} />
+        <AppBar position="static">
+          <Toolbar>
+            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            </IconButton>
+            <Button color="inherit">Login</Button>
+            <Button color="inherit">Learn More</Button>
+            <Button color="inherit">About Us</Button>
+            <Button color="inherit">Rewards</Button>
+          </Toolbar>
+        </AppBar>
+        <img src={logo} alt="Header" className={classes.logo} />
         { Data.map((data, index) => {
             return (
               <Grid
@@ -142,7 +138,9 @@ class App extends Component {
           className={classes.submitButton}
           onClick={this.onSubmit}
         >
+        <Link to ="/Snap">
           Submit
+        </Link>
         </Button>
 
       </div>
@@ -166,7 +164,8 @@ const styles = () => ({
     height: '10%',
     color: 'white',
     textTransform: 'none',
-    fontSize: '150%'
+    fontSize: '150%',
+    margin: '5%'
   },
   submitButton: {
     backgroundColor: '#8cd4e4',
