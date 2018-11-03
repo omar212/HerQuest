@@ -1,0 +1,90 @@
+[
+  {
+    "Question": "What type of animal is a seahorse?",
+    "A": "Crustacean",
+    "B": "Arachnid",
+    "C": "Fish",
+    "D": "Shell",
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "What is the biggest animal that has ever lived?",
+    "A": "Blue whale",
+    "B": "African elephant",
+    "C": "Apatosaurus (aka brontosaurus)",
+    "D": "Spinosaurus",
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "What is the fastest water animal?",
+    "A": "Porpoise",
+    "B": "Sailfish",
+    "C": "Flying fish",
+    "D": "Tuna",
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "Who is usually referred to as the 'Father of Computers' ?",
+    "A": "Blaise Pascal",
+    "B": "Marie Curie",
+    "C": "Charles Babbage",
+    "D": "Bill Gates",
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "What is the word 'pixel' short for?",
+    "A": "Picture element",
+    "B": "Pixelated point",
+    "C": "Pixel (it is not short for anything)",
+    "D": "Edward  Pixelli",
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "Which of the following is not a database program?",
+    "A": "Oracle",
+    "B": "MS-Access",
+    "C": "MS-Word",
+    "D": "FileMaker Pro",
+    "CorrectAnswer": "C"
+  },
+  {
+    "Question": "In which of these cases are landing buttons ignored by an elevator?",
+    "A": "Independent service",
+    "B": "Fire service",
+    "C": "The elevator is switched off",
+    "D": "All of these",
+    "CorrectAnswer": "A"
+  },
+  {
+    "Question": "What is the basic purpose of superheaters in a boiler?",
+    "A": "To increase the steam pressure",
+    "B": "Increase saturation temperature of the steam.",
+    "C": "Preheat feed water.",
+    "D": "To increase the temperature of the steam",
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "A place where things are manufactured. What is the general name for one of these industrial buildings?",
+    "A": "Terminal",
+    "B": "Factory",
+    "C": "Warehouse",
+    "D": "Arsenal",
+    "CorrectAnswer": "B"
+  },
+  {
+    "Question": "These were some of the earliest large structures built by mankind. What are they called?",
+    "A": "Mastabas",
+    "B": "Granaries",
+    "C": "Obelisks",
+    "D": "Pyramids",
+    "CorrectAnswer": "D"
+  },
+  {
+    "Question": "This famous structure is found in Athens, Greece on top of a hill called the Acropolis. Called the Parthenon, what purpose did it serve?",
+    "A": "Its purpose is unknown",
+    "B": "Library",
+    "C": "Temple",
+    "D": "Observatory",
+    "CorrectAnswer": "C"
+  }
+]
