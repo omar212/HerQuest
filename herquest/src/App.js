@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Data from "./data.json";
 import Result from "./EndPage.js";
+import AppBar from '@material-ui/core/AppBar';
 import logo from './hq_logo-01.png';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+// import MenuIcon from '@material-ui/icons/Menu';
+
 import './App.css';
 
 class App extends Component {
@@ -46,8 +51,22 @@ class App extends Component {
 
     return (
       <div className="App">
-      <img src={logo} alt="Header" className={classes.logo} />
 
+
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            {/* <MenuIcon /> */}
+          </IconButton>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            News
+          </Typography>
+          <Button color="inherit">Login</Button>
+          <Button color="inherit">Learn More About Us</Button>
+          <Button color="inherit">Rewards</Button>
+        </Toolbar>
+      </AppBar>
+<img src={logo} alt="Header" className={classes.logo} />
         { Data.map((data, index) => {
             return (
               <Grid
