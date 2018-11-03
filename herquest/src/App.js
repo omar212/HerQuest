@@ -7,6 +7,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Data from "./data.json";
 import Result from "./EndPage.js";
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import logo from './hq_logo-01.png';
 import './App.css';
 
@@ -38,7 +39,7 @@ class App extends Component {
   }
 
   onSubmit() {
-    return ( <Result /> )
+    <Route path="./EndQuiz" component={Result} />
   }
 
   render() {
@@ -58,7 +59,6 @@ class App extends Component {
               >
               <Card id={index} className={classes.card}>
               <div id={index}>
-              {console.log(data.A)}
                 <Typography className={classes.questionColor}>
                   {data.Question}
                 </Typography>
@@ -81,7 +81,11 @@ class App extends Component {
                     >
                       {data.A}
                     </Button>
-                    <Button>
+                    <Button
+                      className={classes.styleButton}
+                      style={this.handleStyleButtons()}
+                      onClick={() => this.handleSelection(index, )}
+                    >
                       {data.B}
                     </Button>
                   </Grid>
@@ -91,10 +95,18 @@ class App extends Component {
                     justify="center"
                     alignItems="center"
                   >
-                    <Button>
+                    <Button
+                      className={classes.styleButton}
+                      style={this.handleStyleButtons()}
+                      onClick={() => this.handleSelection(index, )}
+                    >
                       {data.C}
                     </Button>
-                    <Button>
+                    <Button
+                      className={classes.styleButton}
+                      style={this.handleStyleButtons()}
+                      onClick={() => this.handleSelection(index, )}
+                    >
                       {data.D}
                     </Button>
                   </Grid>
