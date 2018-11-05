@@ -81,16 +81,15 @@ class Start extends Component {
                 key={index}
               >
               <Card id={index} className={classes.card}>
-              <div id={index}>
-                <Typography className={classes.questionColor}>
-                  {data.Question}
-                </Typography>
                 <Grid
                   container
                   direction="column"
                   justify="center"
                   alignItems="center"
                 >
+                  <Typography className={classes.questionStyle}>
+                    {data.Question}
+                  </Typography>
                   <Grid
                     container
                     direction="row"
@@ -142,7 +141,6 @@ class Start extends Component {
                     </Button>
                   </Grid>
                 </Grid>
-              </div>
               </Card>
               </Grid>
             )
@@ -195,9 +193,10 @@ const styles = () => ({
     fontSize: '150%',
     marginBottom: '4%'
   },
-  questionColor: {
+  questionStyle: {
     color: '#7f47dd',
-    fontSize: '200%'
+    fontSize: '200%',
+    textAlign: 'center'
   },
   answers: {
     color: 'white',
