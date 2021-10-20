@@ -1,1 +1,1 @@
-HerQuest, an App with AI Snapchat lens to put young females in the eyes of a STEM career
+An app/website that asks young female questions about whats a possible career that could be suited for you based on your responses
