@@ -12,6 +12,7 @@ import logo from './assests/hq_logo-01.png';
 import MenuIcon from '@material-ui/icons/Menu';
 
 import './App.css';
+import CardComponent from './CardComponent';
 
 class Start extends Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class Start extends Component {
       <div className="Start">
 
         <AppBar position="static">
-          <Toolbar>
+          {/* <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
             </IconButton>
@@ -62,7 +63,7 @@ class Start extends Component {
             <Button color="inherit">Learn More</Button>
             <Button color="inherit">About Us</Button>
             <Button color="inherit">Rewards</Button>
-          </Toolbar>
+          </Toolbar> */}
         </AppBar>
         <Grid
           container
@@ -80,7 +81,14 @@ class Start extends Component {
                 alignItems="center"
                 key={index}
               >
-              <Card id={index} className={classes.card}>
+                <CardComponent 
+                  id={index}
+                  question={data.Question}
+                  answers={[data.A, data.B, data.C, data.D]}
+                  handleSelection={this.handleSelection}
+                  handleStyleButtons={this.handleStyleButtons}
+                />
+              {/* <Card id={index} className={classes.card}>
                 <Grid
                   container
                   direction="column"
@@ -141,7 +149,7 @@ class Start extends Component {
                     </Button>
                   </Grid>
                 </Grid>
-              </Card>
+              </Card> */}
               </Grid>
             )
           }
