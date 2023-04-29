@@ -52,9 +52,8 @@ class Start extends Component {
 
     return (
       <div className="Start">
-
         <AppBar position="static">
-          <Toolbar>
+          {/* <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
               <MenuIcon />
             </IconButton>
@@ -62,8 +61,20 @@ class Start extends Component {
             <Button color="inherit">Learn More</Button>
             <Button color="inherit">About Us</Button>
             <Button color="inherit">Rewards</Button>
-          </Toolbar>
+          </Toolbar> */}
         </AppBar>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+        >
+          <Button
+            className={classes.submitButton}
+            onClick={this.onSubmit}
+          >
+            Be Inspired First!
+          </Button>
+        </Grid>
         <Grid
           container
           justify="center"
@@ -185,13 +196,18 @@ const styles = () => ({
     margin: '5%'
   },
   submitButton: {
-    backgroundColor: '#8cd4e4',
-    width: '10%',
+    backgroundColor: 'yellow',
+    width: 'fit-content',
+    borderRadius: '25px',
+    marginTop:'2%',
     height: '10%',
-    color: 'white',
+    color: 'black',
     textTransform: 'none',
     fontSize: '150%',
-    marginBottom: '4%'
+    marginBottom: '4%',
+    '&:hover': {
+      backgroundColor: 'red'
+    }
   },
   questionStyle: {
     color: '#7f47dd',
@@ -199,7 +215,7 @@ const styles = () => ({
     textAlign: 'center'
   },
   answers: {
-    color: 'white',
+    color: 'black',
     textTransform: 'none',
     fontSize: '100%',
     padding: '4px'
